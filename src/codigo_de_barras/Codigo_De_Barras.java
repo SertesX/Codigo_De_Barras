@@ -59,7 +59,7 @@ public class Codigo_De_Barras {
         }
         System.out.println("sum "+sum);
         System.out.println("indice "+(indice+1));
-        for (int i = 0; i < codigo.length(); i++) {
+        for (int i = 0; i < 10; i++) {
             if(indice%2==0){
                 if((i+sum)%10==0){
                     cifra=i;
