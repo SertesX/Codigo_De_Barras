@@ -24,7 +24,7 @@ public class Codigo_De_Barras {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException{
+    public static void main(String[] args) throws FileNotFoundException, DocumentException{
         Scanner sc=new Scanner(System.in);
         String codigo,completo;
         do{
@@ -82,7 +82,7 @@ public class Codigo_De_Barras {
         return completo;
     }
     
-    public static void crearbarras(String completo) throws FileNotFoundException{
+    public static void crearbarras(String completo) throws FileNotFoundException, DocumentException{
         Document doc = new Document();
         PdfWriter pw = PdfWriter.getInstance(doc,new FileOutputStream("codigo.pdf"));
         doc.open();
